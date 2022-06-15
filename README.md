@@ -23,6 +23,7 @@ Assignment submitted for EagleView Evaluation
 <h3>Assumptions</h3>
 	No significant assumptions are made about the data, except for that it is correctly (annotations were not verified). 
 	The dataset after balancing was split into the three sets for training, validation (model selection) and testing using a 70:15:15 ratio.
+	Due to resource limitations, the model was trained in two parts. First upto 70 epochs, and then the best weights from that run was used to initialize another training for 70 more epochs.
 
 <h3>Inference</h3>
 	The trained model was used for inferencing on the validation and test set of images, and the inference outputs were evaluated against the provided ground truth annotations.
